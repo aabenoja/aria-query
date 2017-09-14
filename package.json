@@ -50,7 +50,8 @@
     "rimraf": "^2.5.4"
   },
   "dependencies": {
-    "ast-types-flow": "0.0.7"
+    "ast-types-flow": "0.0.7",
+    "commander": "^2.11.0"
   },
   "jest": {
     "coverageReporters": [
