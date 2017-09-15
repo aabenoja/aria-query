@@ -153,10 +153,10 @@ Object.keys(output).forEach(type => {
     ...[...output[type].keys()]
       .sort((a, b) => a - b)
       .map(prop => {
-        const depth = 1;
+        const depth = 2;
         return `${constructIndent(depth)}${triageValue(prop, depth, false)} => ${triageValue(output[type].get(prop), depth).join('\n')},`;
       }),
-    `${constructIndent(0)}\};`
+    `${constructIndent(1)}\};`
   );
 });
 
