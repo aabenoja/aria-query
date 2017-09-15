@@ -9,7 +9,8 @@ const ariaPropsMap: MapOfARIAPropertyDefinitions = new Map([
     'type': 'string'
   }],
   ['aria-atomic', {
-    'type': 'boolean'
+    'type': 'boolean',
+    'values': [true, false, 'true', 'false'],
   }],
   ['aria-autocomplete', {
     'type': 'token',
@@ -21,10 +22,12 @@ const ariaPropsMap: MapOfARIAPropertyDefinitions = new Map([
     ]
   }],
   ['aria-busy', {
-    'type': 'boolean'
+    'type': 'boolean',
+    'values': [true, false, 'true', 'false'],
   }],
   ['aria-checked', {
-    'type': 'tristate'
+    'type': 'tristate',
+    'values': [true, false, 'true', 'false', 'mixed'],
   }],
   ['aria-colcount', {
     type: 'integer',
@@ -54,7 +57,8 @@ const ariaPropsMap: MapOfARIAPropertyDefinitions = new Map([
     'type': 'string'
   }],
   ['aria-disabled', {
-    'type': 'boolean'
+    'type': 'boolean',
+    'values': [true, false, 'true', 'false'],
   }],
   ['aria-dropeffect', {
     'type': 'tokenlist',
@@ -69,6 +73,7 @@ const ariaPropsMap: MapOfARIAPropertyDefinitions = new Map([
   }],
   ['aria-expanded', {
     'type': 'boolean',
+    'values': [true, false, 'true', 'false'],
     'allowundefined': true
   }],
   ['aria-flowto', {
@@ -76,13 +81,16 @@ const ariaPropsMap: MapOfARIAPropertyDefinitions = new Map([
   }],
   ['aria-grabbed', {
     'type': 'boolean',
+    'values': [true, false, 'true', 'false'],
     'allowundefined': true
   }],
   ['aria-haspopup', {
-    'type': 'boolean'
+    'type': 'boolean',
+    'values': [true, false, 'true', 'false'],
   }],
   ['aria-hidden', {
-    'type': 'boolean'
+    'type': 'boolean',
+    'values': [true, false, 'true', 'false'],
   }],
   ['aria-invalid', {
     'type': 'token',
@@ -115,12 +123,15 @@ const ariaPropsMap: MapOfARIAPropertyDefinitions = new Map([
   }],
   ['aria-modal', {
     type: 'boolean',
+    'values': [true, false, 'true', 'false'],
   }],
   ['aria-multiline', {
-    'type': 'boolean'
+    'type': 'boolean',
+    'values': [true, false, 'true', 'false'],
   }],
   ['aria-multiselectable', {
-    'type': 'boolean'
+    'type': 'boolean',
+    'values': [true, false, 'true', 'false'],
   }],
   ['aria-orientation', {
     'type': 'token',
@@ -139,10 +150,12 @@ const ariaPropsMap: MapOfARIAPropertyDefinitions = new Map([
     'type': 'integer'
   }],
   ['aria-pressed', {
-    'type': 'tristate'
+    'type': 'tristate',
+    'values': [true, false, 'true', 'false', 'mixed'],
   }],
   ['aria-readonly', {
-    'type': 'boolean'
+    'type': 'boolean',
+    'values': [true, false, 'true', 'false'],
   }],
   ['aria-relevant', {
     'type': 'tokenlist',
@@ -154,7 +167,8 @@ const ariaPropsMap: MapOfARIAPropertyDefinitions = new Map([
     ]
   }],
   ['aria-required', {
-    'type': 'boolean'
+    'type': 'boolean',
+    'values': [true, false, 'true', 'false'],
   }],
   ['aria-roledescription', {
     type: 'string',
@@ -170,6 +184,7 @@ const ariaPropsMap: MapOfARIAPropertyDefinitions = new Map([
   }],
   ['aria-selected', {
     'type': 'boolean',
+    'values': [true, false, 'true', 'false'],
     'allowundefined': true
   }],
   ['aria-setsize', {
